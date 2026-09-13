@@ -1,0 +1,220 @@
+/* Ajustar espacios de la pagina web */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Color y ajuste de fondo de la pagina */
+body {
+    background-color: #f7f9fa;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Bandera de el encabezado */
+header {
+    width: 100%;
+    text-align: center;
+}
+
+/* Franja verde de la bandera */
+.franja-verde { 
+    background-color: #006847; 
+    height: 18px; 
+}
+
+/* Titulo y color blanco de la bandera */
+.franja-blanca { 
+    background-color: #ffffff; 
+    font-size: 26px; 
+    font-weight: bold; 
+    padding: 12px 0; 
+}
+
+/* Franja roja de la bandera */
+.franja-roja { 
+    background-color: #ce1126; 
+    height: 18px; 
+}
+
+/* Acomodo de las imagenes de los lados y el texto del centro */
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px 15px;
+    flex: 1;
+}
+
+/* Tamano de las imagenes de decoracion*/
+.adorno {
+    width: 200px;
+    max-width: 100%;
+}
+
+/* Ancho del contenido de en medio */
+main {
+    max-width: 750px;
+    width: 100%;
+}
+
+/* Texto de la etiqueta */
+.tag {
+    color: #c59b27;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Titulo grande principal */
+h1 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+/* Texto explicativo debajo del titulo */
+.subtitulo {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Barra del menu estilo */
+nav {
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 30px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+/* Botones del menu */
+nav a {
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+}
+
+/* Boton de la pagina en la que estoy */
+nav a.activa {
+    background-color: #006847;
+    color: #ffffff;
+}
+
+/* Titulos de cada seccion con la linea verde abajo */
+h2.titulo-seccion {
+    margin: 20px 0 15px 0;
+    border-bottom: 2px solid #006847;
+    padding-bottom: 5px;
+}
+
+/* Contenedor oscura con la informacion */
+.caja-negra {
+    background-color: #111514;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Contenedor blancas para las fechas y las preguntas */
+.caja-blanca {
+    background-color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.caja-blanca h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.caja-blanca p {
+    color: #555;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Color de las fechas */
+.fecha h3 { 
+    color: #006847; 
+}
+
+/* Tarjetas de los personajes */
+.personaje {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Forma redonda de las imagenes */
+.personaje img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Apodo de los personajes */
+.sub-amarillo {
+    color: #c59b27;
+    font-weight: bold;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+/* Caja de la frase de Morelos */
+.caja-cita {
+    background-color: #f7f3e8;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.caja-cita h2 { 
+    font-size: 16px; 
+    margin-bottom: 5px; 
+}
+
+.caja-cita p { 
+    font-size: 12px; 
+    color: #555; 
+    font-weight: bold; 
+}
+
+/* Diseño del footer con mis datos */
+footer {
+    width: 100%;
+    background-color: #111514;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 14px;
+}
+
+footer .nombre {
+    font-weight: bold;
+    font-size: 16px;
+    color: #c59b27;
+}
+
+footer p { 
+    margin: 3px 0; 
+}
