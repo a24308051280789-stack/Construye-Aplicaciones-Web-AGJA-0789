@@ -1,82 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tipos de listas en HTML</title>
+<!DOCTYPE html> <!-- Tipo de documento -->
+<html lang="es"> <!-- Inicio del documento -->
+
+<head> <!-- Encabezadode la pagina -->
+    <meta charset="UTF-8"> <!-- Caracteres y acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación y zoom móvil -->
+    <title>Tipos de listas en HTML</title> <!-- Título de pestaña -->
 </head>
-<body>
-    <h1>Tipos de listas</h1>
-    <h2>Listas ordenadas</h2>
+
+<body> <!-- Contenido de la pagina -->
+
+    <h1>Tipos de listas</h1> <!-- Título principal -->
+
+    <h2>Listas ordenadas</h2> <!-- Sección principal -->
     <p>Una lista ordenada es una serie de elementos los cuales 
         tendran una numeracion de acuerdo al numeros de elementos.
-    </p>
-    <ol>
-        <li>Luna Arias </li>
-        <li>Franco Andrea</li>
-        <li>Granados Evelyn</li>
+    </p> <!-- Párrafo descriptivo -->
+    <ol> <!-- Lista ordenada numerada -->
+        <li>Luna Arias</li> <!-- Elemento de lista -->
+        <li>Franco Andrea</li> <!-- Elemento de lista -->
+        <li>Granados Evelyn</li> <!-- Elemento de lista -->
     </ol>
-    <h2>Listas no ordenadas</h2>
+
+    <h2>Listas no ordenadas</h2> <!-- Sección principal -->
     <p>Las listas no ordenadas no utilizan ninguna numeracion delante 
         de cada item sino un pequeño elemento grafico
-    </p>
-    <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>Python</li>
+    </p> <!-- Párrafo descriptivo -->
+    <ul> <!-- Lista no ordenada con viñetas -->
+        <li>C</li> <!-- Elemento de lista -->
+        <li>C++</li> <!-- Elemento de lista -->
+        <li>Python</li> <!-- Elemento de lista -->
     </ul>
-    <h2>Lista de definiciones</h2>
-    <p>Se utiliza para asociar un termino y la definicion del mismo</p>
-    <dl>
-        <!-- Primer termino-->
-        <dt>C++</dt>
-        <!-- Definicion del primer termino-->
+
+    <h2>Lista de definiciones</h2> <!-- Sección principal -->
+    <p>Se utiliza para asociar un termino y la definicion del mismo</p> <!-- Párrafo descriptivo -->
+    <dl> <!-- Lista de definición -->
+        <dt>C++</dt> <!-- Término a definir -->
         <dd>
             Es un lenguaje de programacion, diseñado a mediados de los años
             1980 como extension del lenguaje de programacion C.
-        </dd>
-        <!-- Segundo termino-->
-        <dt>Java</dt>
-        <!-- Definicion del segundo termino-->
+        </dd> <!-- Descripción del término -->
+
+        <dt>Java</dt> <!-- Término a definir -->
         <dd>
             Es un lenguaje de programacion orientado a objetos desarrollado
             por Sun Microsystem a principios de los 90.
-        </dd>
-        <!-- Tercer termino-->
-        <dt>JavaScript</dt>
-        <!-- Definicion del tercer termino-->
+        </dd> <!-- Descripción del término -->
+
+        <dt>JavaScript</dt> <!-- Término a definir -->
         <dd>
             Es un lenguaje interpretado, es decir que no requiere compilacion,
             utilizado principalmente en paginas web, con una sintaxis similar
             al lenguaje de programacion C.
-        </dd>
+        </dd> <!-- Descripción del término -->
     </dl>
-    <h2>Listas anidadas</h2>
+
+    <h2>Listas anidadas</h2> <!-- Sección principal -->
     <p>En HTML nos permite insertar una lista dentro de otra lista, se pueden
         anidar diferentes tipos de lista de acuerdo al requerimiento
-    </p>
-    <ol>
-        <li>Argentina
-            <ul>
-                <li>Buenos aires</li>
-                <li>La plata</li>
-                <li>Mendoza</li>
+    </p> <!-- Párrafo descriptivo -->
+    <ol> <!-- Lista ordenada principal -->
+        <li>Argentina <!-- Elemento con sublista -->
+            <ul> <!-- Sublista no ordenada -->
+                <li>Buenos aires</li> <!-- Elemento de lista interna -->
+                <li>La plata</li> <!-- Elemento de lista interna -->
+                <li>Mendoza</li> <!-- Elemento de lista interna -->
             </ul>
         </li>
-        <li>España
-            <ul>
-                <li>Barcelona</li>
-                <li>Madrid</li>
-                <li>Sevilla</li>
+        <li>España <!-- Elemento con sublista -->
+            <ul> <!-- Sublista no ordenada -->
+                <li>Barcelona</li> <!-- Elemento de lista interna -->
+                <li>Madrid</li> <!-- Elemento de lista interna -->
+                <li>Sevilla</li> <!-- Elemento de lista interna -->
             </ul>
         </li>
-        <li>Mexico
-            <ul>
-                <li>Chihuahua</li>
-                <li>Cd. Juarez</li>
-                <li>Hermosillo</li>
+        <li>Mexico <!-- Elemento con sublista -->
+            <ul> <!-- Sublista no ordenada -->
+                <li>Chihuahua</li> <!-- Elemento de lista interna -->
+                <li>Cd. Juarez</li> <!-- Elemento de lista interna -->
+                <li>Hermosillo</li> <!-- Elemento de lista interna -->
             </ul>
         </li>
     </ol>
+
 </body>
+
 </html>
