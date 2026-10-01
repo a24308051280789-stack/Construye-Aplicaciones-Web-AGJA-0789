@@ -9,29 +9,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación y zoom móvil -->
     <title>Mi-Horario 5°J en HTML</title> <!-- Título de pestaña -->
 </head>
-    <h2>Centro de Bachillerato Tecnico Industrial y de Servicios #128</h2> <!-- Sección principal -->
-    
-    <table border="1"> <!-- Tabla básica con borde -->
-        <caption>Horario 5°J</caption> <!-- Título de la tabla -->
+
+<body>
+
+    <h2 align="center">Centro de Bachillerato Tecnico Industrial y de Servicios #128</h2> <!-- Sección principal -->
+    <img src="jaguar.png" alt="Logo" width="70" height="70">
+    <!-- Tabla del Horario -->
+    <table width="1000" border="1" cellpadding="5" cellspacing="0" align="center" style="text-align: center; font-family: sans-serif;">
+        <caption><b>Horario 5-J</b></caption>
         <tr> <!-- Fila de encabezados -->
-            <th>Hora</th> <!-- Celda de encabezado -->
-            <th>Lunes</th> <!-- Celda de encabezado -->
-            <th>Martes</th> <!-- Celda de encabezado -->
-            <th>Miercoles</th> <!-- Celda de encabezado -->
-            <th>Jueves</th> <!-- Celda de encabezado -->
-            <th>Viernes</th> <!-- Celda de encabezado -->
+            <th width="16">📅</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
         </tr>
-        <tr> <!-- Fila de tabla -->
-            <td>Ciudad de Mexico</td> <!-- Celda de datos -->
-            <td>9.2 millones</td> <!-- Celda de datos -->
+        <!-- 7:00 - 8:00 -->
+        <tr>
+            <td>7:00<br>8:00</td>
+            <td></td>
+            <td style="background-color: #e6ee9c;">5° CH 2<br>Juarez<br><b>AULA 38</b></td>
+            <td style="background-color: #c0ca33;">5° Apli. Adm<br>Estrada<br><b>AULA 38</b></td>
+            <td style="background-color: #c0ca33;">5° Apli. Adm<br>Estrada<br><b>AULA 38</b></td>
+            <td style="background-color: #8d6e63;">5° Ingles 5<br>Terrazas<br><b>AULA 38</b></td>
         </tr>
-        <tr> <!-- Fila de tabla -->
-            <td>Guadalajara</td> <!-- Celda de datos -->
-            <td>4.1 millones</td> <!-- Celda de datos -->
+
+        <!-- 8:00 - 9:00 -->
+        <tr>
+            <td>8:00<br>9:00</td>
+            <td></td>
+            <td style="background-color: #c0ca33;">5° Apli. Adm<br>Estrada<br><b>AULA 38</b></td>
+            <td style="background-color: #e6ee9c;">5° CH 2<br>Juarez<br><b>AULA 38</b></td>
+            <td style="background-color: #8d6e63;">5° Ingles 5<br>Terrazas<br><b>AULA 38</b></td>
+            <td style="background-color: #e6ee9c;">5° CH 2<br>Juarez<br><b>AULA 38</b></td>
         </tr>
-        <tr> <!-- Fila de tabla -->
-            <td>Monterrey</td> <!-- Celda de datos -->
-            <td>3.9 millones</td> <!-- Celda de datos -->
+
+        <!-- 9:00 - 10:00 -->
+        <tr>
+            <td>9:00<br>10:00</td>
+            <td style="background-color: #8d6e63;">5° Ingles 5<br>Terrazas<br><b>AULA 38</b></td>
+            <td rowspan="2" style="background-color: #ff6d00;">PROG M4S1<br>Meza<br><b>AULA 38</b></td>
+            <td style="background-color: #ff6d00;">PROG M4S1<br>Meza<br><b>AULA 38</b></td>
+            <td rowspan="2" style="background-color: #ff6d00;">PROG M4S1<br>Meza<br><b>AULA 38</b></td>
+            <td rowspan="2" style="background-color: #ff6d00;">PROG M4S1<br>Meza<br><b>AULA 38</b></td>
+        </tr>
+
+        <!-- 10:00 - 10:50 -->
+        <tr>
+            <td>10:00<br>10:50</td>
+            <td style="background-color: #76ff03;">5° CNEyT 5<br>Reyes<br><b>AULA 38</b></td>
+            <td style="background-color: #8d6e63;">5° Ingles 5<br>Terrazas<br><b>AULA 38</b></td>
+        </tr>
+
+        <!-- recreo -->
+        <tr style="background-color: #e0f2fe;">
+            <td colspan="6">recreo</td>
+        </tr>
+
+        <!-- 11:10 - 12:00 -->
+        <tr>
+            <td>11:10<br>12:00</td>
+            <td style="background-color: #b0bec5;">PROG M4S2<br>Gonzales A<br><b>AULA 38</b></td>
+            <td style="background-color: #b0bec5;">PROG M4S2<br>Gonzales A<br><b>AULA 38</b></td>
+            <td rowspan="2" style="background-color: #76ff03;">5° CNEyT 5<br>Reyes<br><b>AULA 38</b></td>
+            <td style="background-color: #b0bec5;">PROG M4S2<br>Gonzales A<br><b>AULA 38</b></td>
+            <td style="background-color: #76ff03;">5° CNEyT 5<br>Reyes<br><b>AULA 38</b></td>
+        </tr>
+
+        <!-- 12:00 - 13:00 -->
+        <tr>
+            <td>12:00<br>13:00</td>
+            <td style="background-color: #a855f7;">5° FS<br>Meza<br><b>AULA 38</b></td>
+            <td style="background-color: #8d6e63;">5° Ingles 5<br>Terrazas<br><b>AULA 38</b></td>
+            <td style="background-color: #b0bec5;">PROG M4S2<br>Gonzales A<br><b>AULA 38</b></td>
+            <td style="background-color: #b0bec5;">PROG M4S2<br>Gonzales A<br><b>AULA 38</b></td>
+        </tr>
+
+        <!-- 13:00 - 14:00 -->
+        <tr>
+            <td>13:00<br>14:00</td>
+            <td style="background-color: #2e7d32;">5° TSdM 2<br>Macias<br><b>AULA 38</b></td>
+            <td style="background-color: #2e7d32;">5° TSdM 2<br>Macias<br><b>AULA 38</b></td>
+            <td style="background-color: #2e7d32;">5° TSdM 2<br>Macias<br><b>AULA 38</b></td>
+            <td style="background-color: #2e7d32;">5° TSdM 2<br>Macias<br><b>AULA 38</b></td>
+            <td style="background-color: #2e7d32;">5° TSdM 2<br>Macias<br><b>AULA 38</b></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Tabla de Profesores y Materias -->
+    <table border="1" cellpadding="5" cellspacing="0" align="center" style="font-family: sans-serif; text-align: left;">
+        <tr>
+            <th>n°hs.</th>
+            <th align="center" style="color: #0284c7;">Profesores</th>
+            <th align="center" style="color: #0284c7;">Materia</th>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ESTRADA ORTEGA MARIA ANTONIETA</td>
+            <td style="background-color: #c0ca33;">5° Aplicaciones de la administracion</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>GONZALEZ AGUILERA LIDIA VIRIDIANA</td>
+            <td style="background-color: #b0bec5;">Implementa aplicaciones web</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JUÁREZ LOZOYA GUILLERMO</td>
+            <td style="background-color: #e6ee9c;">Conciencia Historica 2 Mexico durante el expansion</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>MACIAS MARIO</td>
+            <td style="background-color: #2e7d32;">Temas Selectos de Matematicas 2</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>MEZA DÍAZ LETICIA</td>
+            <td style="background-color: #ff6d00;">Construye aplicaciones web</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>MEZA DÍAZ LETICIA</td>
+            <td style="background-color: #a855f7;">Formacion socioemocional 5</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>REYES LUIS HOMERO</td>
+            <td style="background-color: #76ff03;">Ciencias Naturales, Experimentales y Tecnologia 5</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>TERRAZAS CERVANTES GRISELDA</td>
+            <td style="background-color: #8d6e63;">Ingles 5</td>
         </tr>
     </table>
 
