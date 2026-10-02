@@ -1,0 +1,32 @@
+<!--Adame Gallardo Jose Abraham-->
+<!--0789-->
+<!--5-J-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Radiobotón</title>
+</head>
+<body>
+    <h2>Formularios con Radioboton</h2>
+    <form action="" method="post">
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        
+        Selecciona el máximo de estudios que tienes:
+        <br>
+        <!-- type="radio" crea botones redondos de opción ÚNICA -->
+        <!-- Al compartir el mismo atributo name="estudios", el navegador sólo permite elegir uno a la vez -->
+        <!-- value="..." contiene el valor numérico o de texto que se envía al servidor -->
+        <input type="radio" name="estudios" value="1"> Sin estudios <br>
+        <input type="radio" name="estudios" value="2"> Primaria <br>
+        <input type="radio" name="estudios" value="3"> Secundaria <br>
+        <input type="radio" name="estudios" value="4"> Preparatoria <br>
+        
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+</body>
+</html>
