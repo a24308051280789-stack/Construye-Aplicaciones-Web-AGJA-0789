@@ -1,0 +1,112 @@
+<!--Adame Gallardo Jose Abraham-->
+<!--0789-->
+<!--5-J-->
+<!DOCTYPE html> <!-- Tipo de documento -->
+<html lang="es"> <!-- Inicio del documento -->
+
+<head> <!-- Encabezado de la pagina -->
+    <meta charset="UTF-8"> <!-- Caracteres y acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación y zoom móvil -->
+    <title>Atributos Texto en HTML</title> <!-- Título de pestaña -->
+</head>
+
+<body>
+
+    <!-- Título principal con etiquetas y atributos de texto HTML -->
+    <div align="center">
+        <font face="cursive" size="5" color="#0D2859"><i>medicina paramedicos</i></font><!--Aqui entra uno de los titulos en cursiva-->
+        <br>
+        <font face="sans-serif" size="6" color="#0D2859">Semáforo </font>
+        <font face="sans-serif" size="7" color="#0D2859"><b><i>TRIAGE</i></b></font><!--Aqui entra uno de los titulos en grande-->
+        <br>
+        <font face="cursive" size="5" color="#0D2859"><i>urgencias</i></font>
+    </div>
+
+    <br>
+
+    <!-- Tabla con atributos de alineación y espaciado -->
+    <table cellpadding="15" cellspacing="10" align="center">
+        
+        <!-- Fila de encabezados -->
+        <tr>
+            <th bgcolor="#E2E8F0"> <!--Es el color de el fondo-->
+                <font face="sans-serif" size="3" color="#0D2859">Tipo de atención</font><!--face seria la fuente del texto-->
+            </th>
+            <th bgcolor="#E2E8F0">
+                <font face="sans-serif" size="3" color="#0D2859">Área de atención</font><!--size seria el tamaño del texto-->
+            </th>
+            <th bgcolor="#E2E8F0">
+                <font face="sans-serif" size="3" color="#0D2859">Tiempo de espera</font><!--color seria el color del texto-->
+            </th>
+        </tr>
+
+        <!-- Fila 1: Reanimación (Rojo) -->
+        <tr align="center">
+            <td>
+                <font face="sans-serif" size="5" color="#FF0000"><b><i>Reanimación</i></b></font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#FF0000">Área de<br>reanimación</font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#FF0000">Inmediato<br>hasta 3 min</font>
+            </td>
+        </tr>
+
+        <!-- Fila 2: Emergencia (Naranja) -->
+        <tr align="center">
+            <td>
+                <font face="sans-serif" size="5" color="#FF7F00"><b><i>Emergencia</i></b></font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#FF7F00">Área de<br>reanimación</font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#FF7F00">Inmediato<br>hasta 10 min</font>
+            </td>
+        </tr>
+
+        <!-- Fila 3: Urgencia (Amarillo) -->
+        <tr align="center">
+            <td>
+                <font face="sans-serif" size="5" color="#DAA520"><b><i>Urgencia</i></b></font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#DAA520">Consultorio de<br>primer contacto</font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#DAA520">Hasta 30 min</font>
+            </td>
+        </tr>
+
+        <!-- Fila 4: Urgencia Menor (Verde) -->
+        <tr align="center">
+            <td>
+                <font face="sans-serif" size="5" color="#00A651"><b><i>Urgencia<br>menor</i></b></font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#00A651">Consultorio de<br>primer contacto<br>o UMF</font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#00A651">Hasta 120 min</font>
+            </td>
+        </tr>
+
+        <!-- Fila 5: Sin Urgencia (Azul) -->
+        <tr align="center">
+            <td>
+                <font face="sans-serif" size="5" color="#1C3F94"><b><i>Sin<br>urgencia</i></b></font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#1C3F94">Consultorio de<br>primer contacto<br>o UMF</font>
+            </td>
+            <td>
+                <font face="sans-serif" size="3" color="#1C3F94">Hasta 180 min</font>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
