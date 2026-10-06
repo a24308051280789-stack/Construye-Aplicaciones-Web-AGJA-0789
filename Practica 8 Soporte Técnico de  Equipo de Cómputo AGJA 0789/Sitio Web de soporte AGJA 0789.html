@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico de Computadoras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 1. ENCABEZADO */
+        header {
+            background-color: #5c0000;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        /* 2. BARRA DE NAVEGACIÓN */
+        nav {
+            background-color: #bf0000;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #bf0000;
+        }
+
+        /* 3. CUERPO DE LA PÁGINA */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #5d1a1a;
+        }
+
+        /* TABLA DE PRODUCTOS */
+        table {
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ffcfcf;
+        }
+
+        th {
+            background-color: #f7eded;
+            color: #5d1a1a;
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        /* FORMULARIO DE SOPORTE TÉCNICO */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .service-options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-option {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #bf0000;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #5d1a1a;
+        }
+
+        /* 4. FOOTER */
+        footer {
+            background-color: #5d1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Centro de Soporte Técnico de Computadoras</h1>
+        <p>Mantenimiento, reparación y diagnóstico profesional para tu equipo</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        
+        <a href="#productos">Productos a Reparar</a>
+        <a href="#productos">Tabla de Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main id="inicio">
+
+        <section>
+            <h2>Bienvenidos a Nuestro Taller</h2>
+            <p>Brindamos soluciones integrales de software y hardware para todo tipo de equipos de cómputo. Nos especializamos en reparación rápida, mantenimiento preventivo y optimización de rendimiento.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Productos que Reparamos</h2>
+            <p>A continuación se muestra el catálogo de equipos que atendemos en nuestro centro de soporte:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción del Servicio</th>
+                        <th>Garantía</th>
+                        <th>Imagen del producto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Laptops / Portátiles</b></td>
+                        <td>Cambio de pantalla, teclado, batería, reparación de bisagras y limpieza de ventiladores.</td>
+                        <td>3 Meses</td>
+                        <td><img src="images (4).jpg" alt="Imagen del producto"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Computadoras de Escritorio (PC)</b></td>
+                        <td>Reemplazo de fuente de poder, formateo, actualización de memoria RAM y disco SSD.</td>
+                        <td>3 Meses</td>
+                        <td><img src="images.jpg" alt="Imagen del producto" width="200"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Computadoras para juegos / Alto Rendimiento</b></td>
+                        <td>Cambio de pasta térmica, limpieza profunda de tarjeta de vídeo y optimización del sistema.</td>
+                        <td>3 Meses</td>
+                        <td><img src="images (1).jpg" alt="Imagen del producto" width="200"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Monitores</b></td>
+                        <td>Reparación de tarjeta de encendido, cambio de fuentes externas y capacitores dañados.</td>
+                        <td>1 Mes</td>
+                        <td><img src="images (2).jpg" alt="Imagen del producto" width="200"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Impresoras</b></td>
+                        <td>Mantenimiento de cabezales, eliminación de atascos de papel y recarga de tóner/tinta.</td>
+                        <td>1 Mes</td>
+                        <td><img src="images (3).jpg" alt="Imagen del producto" width="200"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Consolas de Videojuegos</b></td>
+                        <td>Limpieza interna, cambio de pasta térmica y reparación de puertos HDMI.</td>
+                        <td>2 Meses</td>
+                        <td><img src="images (5).jpg" alt="Imagen del producto" width="200"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Formulario de Solicitud de Soporte Técnico</h2>
+            <p>Llena el siguiente formulario para agendar una revisión o recibir una cotización de tu problema:</p>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="1234567890" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="producto">Selecciona el producto a reparar:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="laptop">Laptop / Portátil</option>
+                        <option value="desktop">Computadora de Escritorio (PC)</option>
+                        <option value="gaming">Computadora Gaming</option>
+                        <option value="monitor">Monitor</option>
+                        <option value="impresora">Impresora</option>
+                        <option value="consola">Consola de Videojuegos</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Elige un tipo de servicio:</label>
+                    <div class="service-options">
+                        <label class="service-option"><input type="radio" name="tipo_soporte" value="mantenimiento" required>Tipo Mantenimiento</label><br>
+                        <label class="service-option"><input type="radio" name="tipo_soporte" value="hardware" required>Tipo de Hardware</label><br>
+                        <label class="service-option"><input type="radio" name="tipo_soporte" value="software" required>Tipo Software</label><br>
+                        <label class="service-option"><input type="radio" name="tipo_soporte" value="diagnostico" required>Tipo Diagnostico</label><br>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción detallada del problema:</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Escribe aquí lo que le sucede a tu equipo..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar Solicitud de Soporte</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p size="2"><b>Centro de Soporte Técnico Informático</b></p>
+        <p size="2">Adame Gallardo Jose Abraham / No.Control: 0789 / Construye Aplicaciones Web / Grupo:5-J</p>
+    </footer>
+
+</body>
+</html>
