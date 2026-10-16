@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Cinépolis - Iniciar Sesión</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navbar">
+    <div class="logo">Cinépolis</div>
+    <a href="index.html" class="btn-back">← Volver al inicio</a>
+  </nav>
+
+  <!-- CONTENEDOR PRINCIPAL DEL FORMULARIO -->
+  <main class="login-container">
+    <div class="login-card">
+      <div class="card-header">
+        <h2>Club Cinépolis</h2>
+        <p>Ingresa los datos de tu tarjeta para acceder a tus puntos y beneficios.</p>
+      </div>
+
+      <form class="login-form" action="#" method="post">
+        <div class="form-group">
+          <label for="cardNumber">Número de Tarjeta Club Cinépolis</label>
+          <input 
+            type="text" 
+            id="cardNumber" 
+            name="cardNumber" 
+            placeholder="Ej. 1000 2345 6789" 
+            maxlength="16" 
+            required
+          >
+        </div>
+
+        <div class="form-group" method="post">
+          <label for="password">Contraseña / PIN</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="••••••••" 
+            required
+          >
+        </div>
+
+        <div class="form-options">
+          <label class="checkbox-container">
+            <input type="checkbox" name="remember">
+            <span>Recordar mi tarjeta</span>
+          </label>
+          <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn-submit">Ingresar</button>
+      </form>
+
+      <div class="card-footer">
+        <p>¿No tienes tarjeta? <a href="#">Regístrate aquí</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-bottom" style="margin-top: 0; padding-top: 0; border: none;">
+      <p>&copy; 2026 Cinépolis - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
