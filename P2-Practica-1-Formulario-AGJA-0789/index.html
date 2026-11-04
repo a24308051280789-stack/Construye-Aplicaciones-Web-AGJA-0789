@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2-Practica 1 Formulario AGJA 0789 Samsung Store</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background: #f4f6f9; color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        header { background: #1428a0; color: white; text-align: center; padding: 20px 10px; }
+        header h1 { font-size: 1.8rem; margin-bottom: 5px; }
+        header p { font-size: 0.9rem; opacity: 0.9; }
+
+        nav { background: #0d1b70; text-align: center; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav button, nav a.nav-link { background: transparent; color: white; border: none; padding: 15px 25px; font-size: 1rem; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; }
+        nav button.active, nav button:hover, nav a.nav-link:hover { background: white; color: #1428a0; }
+
+        .contenedor { width: 92%; max-width: 950px; margin: 30px auto; flex: 1; background: white; padding: 35px 25px; border-radius: 6px; border: 1px solid #ddd; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        h2 { color: #1428a0; margin-bottom: 25px; text-align: center; font-size: 1.5rem; }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Estilos del Catálogo */
+        .grid-productos { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .card-prod { border: 1px solid #e0e0e0; padding: 15px; text-align: center; width: 200px; background: #fafafa; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .card-prod span { display: block; font-size: 0.85rem; color: #666; margin-bottom: 8px; font-weight: bold; }
+        .card-prod img { width: 100%; height: 130px; object-fit: contain; margin-bottom: 12px; }
+        .card-prod h3 { font-size: 1rem; color: #111; margin-bottom: 6px; }
+        .card-prod p { color: #1428a0; font-weight: bold; font-size: 1.05rem; }
+
+        /* Estilos del Formulario sin empalmes */
+        form { display: flex; flex-direction: column; gap: 16px; max-width: 480px; margin: 0 auto; width: 100%; }
+        .form-group { display: flex; flex-direction: column; gap: 6px; }
+        label { font-weight: bold; font-size: 0.9rem; color: #444; text-align: left; }
+        input { padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.95rem; width: 100%; }
+        input:focus { outline: none; border-color: #1428a0; box-shadow: 0 0 4px rgba(20,40,160,0.3); }
+        button[type="submit"] { background: #1428a0; color: white; padding: 13px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 1rem; margin-top: 10px; transition: background 0.2s; }
+        button[type="submit"]:hover { background: #0d1b70; }
+
+        footer { background: #102285; color: white; text-align: center; padding: 15px; font-size: 0.85rem; margin-top: auto; line-height: 1.4; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Samsung Store</h1>
+        <p>P2-Practica 1 Formulario AGJA 0789</p>
+    </header>
+
+    <nav>
+        <button id="btn-prod" class="nav-btn active" onclick="verTab(event, 'productos')">Productos</button>
+        <button id="btn-reg" class="nav-btn" onclick="verTab(event, 'registro')">Registro de Usuario</button>
+        <a href="./inicio_sesion.php" class="nav-link">Usuarios Registrados</a>
+    </nav>
+
+    <div class="contenedor">
+        <!-- PESTAÑA 1: PRODUCTOS -->
+        <div id="productos" class="tab-content active">
+            <h2>Catálogo de Productos Samsung</h2>
+            <div class="grid-productos">
+                <div class="card-prod">
+                    <span>Teléfonos</span>
+                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=400&q=80" alt="Galaxy S24 Ultra">
+                    <h3>Galaxy S24 Ultra</h3>
+                    <p>$24,999 MXN</p>
+                </div>
+                <div class="card-prod">
+                    <span>Audífonos</span>
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=400&q=80" alt="Galaxy Buds2 Pro">
+                    <h3>Galaxy Buds2 Pro</h3>
+                    <p>$3,499 MXN</p>
+                </div>
+                <div class="card-prod">
+                    <span>Relojes</span>
+                    <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=400&q=80" alt="Galaxy Watch6">
+                    <h3>Galaxy Watch6</h3>
+                    <p>$5,999 MXN</p>
+                </div>
+                <div class="card-prod">
+                    <span>Tablets</span>
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=400&q=80" alt="Galaxy Tab S9">
+                    <h3>Galaxy Tab S9</h3>
+                    <p>$14,999 MXN</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PESTAÑA 2: REGISTRO -->
+        <div id="registro" class="tab-content">
+            <h2>Formulario de Registro de Usuario</h2>
+            <form action="./conexion_registro.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="10 dígitos">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required placeholder="••••••••">
+                </div>
+
+                <button type="submit">Registrar Usuario</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Todos Los Derechos Reservados 2026</p>
+        <p>Adame Gallardo Jose Abraham / 0789 / 5-J / Construye aplicaciones Web</p>
+    </footer>
+
+    <script>
+        function verTab(evt, tabName) {
+            var i, tabs, btns;
+            tabs = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+            btns = document.getElementsByClassName("nav-btn");
+            for (i = 0; i < btns.length; i++) {
+                btns[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            if (evt) {
+                evt.currentTarget.classList.add("active");
+            }
+        }
+
+        // Detecta si la URL trae el hash #registro para abrir directamente esa pestaña
+        if (window.location.hash === '#registro') {
+            verTab(null, 'registro');
+            document.getElementById('btn-prod').classList.remove('active');
+            document.getElementById('btn-reg').classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
