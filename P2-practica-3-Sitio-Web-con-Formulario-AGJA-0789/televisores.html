@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2-practica 3 AGJA 0789 - Televisores</title>
+    <style>
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+        }
+        
+        body { 
+            background-color: #f4f6f9; 
+            color: #333333; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+
+        header { 
+            background-color: #1428a0; 
+            color: #ffffff; 
+            text-align: center; 
+            padding: 20px 10px; 
+        }
+
+        header h1 { 
+            font-size: 1.8rem; 
+            margin-bottom: 5px; 
+        }
+
+        header p { 
+            font-size: 0.9rem; 
+            opacity: 0.9; 
+        }
+
+        nav { 
+            background-color: #0d1b70; 
+            text-align: center; 
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+        }
+
+        nav a { 
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 15px 20px; 
+            display: inline-block; 
+            font-weight: bold; 
+            font-size: 0.95rem; 
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        nav a:hover, 
+        nav a.active { 
+            background-color: #ffffff; 
+            color: #1428a0; 
+        }
+
+        .contenedor { 
+            width: 92%; 
+            max-width: 950px; 
+            margin: 30px auto; 
+            flex: 1; 
+            background-color: #ffffff; 
+            padding: 35px 25px; 
+            border-radius: 6px; 
+            border: 1px solid #dddddd; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); 
+        }
+
+        h2 { 
+            color: #1428a0; 
+            margin-bottom: 25px; 
+            text-align: center; 
+            font-size: 1.5rem; 
+        }
+
+        .catalogo { 
+            display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+        }
+
+        .producto { 
+            border: 1px solid #e0e0e0; 
+            padding: 15px; 
+            text-align: center; 
+            width: 200px; 
+            background-color: #fafafa; 
+            border-radius: 6px; 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+            transition: transform 0.2s ease, box-shadow 0.2s ease; 
+        }
+
+        .producto:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .producto img { 
+            width: 100%; 
+            height: 130px; 
+            object-fit: contain; 
+            margin-bottom: 10px; 
+            border-radius: 4px; 
+        }
+
+        .producto h3 { 
+            font-size: 0.95rem; 
+            margin: 8px 0 5px; 
+            color: #111111; 
+        }
+
+        .producto p { 
+            color: #1428a0; 
+            font-weight: bold; 
+            font-size: 1rem; 
+        }
+
+        footer { 
+            background-color: #102285; 
+            color: #ffffff; 
+            text-align: center; 
+            padding: 15px; 
+            font-size: 0.85rem; 
+            margin-top: auto; 
+            line-height: 1.4; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Samsung Store</h1>
+        <p>P2-practica 3- Sitio Web con Formulario AGJA 0789</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="telefonos.html">Teléfonos</a>
+        <a href="audifonos.html">Audífonos</a>
+        <a href="tecnologia.html">Tecnología</a>
+        <a href="televisores.html" class="active">Televisores</a>
+        <a href="registro.php">Registro de Usuario</a>
+        <a href="inicio_sesion.php">Usuarios Registrados</a>
+    </nav>
+
+    <div class="contenedor">
+        <h2>Catálogo de Televisores y Smart TVs</h2>
+        <div class="catalogo">
+            <div class="producto"><img src="tv_neo_qled.jpg" alt="Neo QLED 8K 75"><h3>Neo QLED 8K 75"</h3><p>$65,999.00 MXN</p></div>
+            <div class="producto"><img src="tv_oled_65.jpg" alt="OLED 4K 65 S90C"><h3>OLED 4K 65"</h3><p>$34,999.00 MXN</p></div>
+            <div class="producto"><img src="tv_the_frame.jpg" alt="The Frame 55 QLED"><h3>The Frame 55"</h3><p>$22,999.00 MXN</p></div>
+            <div class="producto"><img src="tv_crystal_50.jpg" alt="Crystal UHD 4K 50"><h3>Crystal UHD 50"</h3><p>$8,999.00 MXN</p></div>
+            <div class="producto"><img src="tv_the_serif.jpg" alt="The Serif 43 QLED"><h3>The Serif 43"</h3><p>$17,999.00 MXN</p></div>
+            <div class="producto"><img src="tv_the_sero.jpg" alt="The Sero 43 Giratorio"><h3>The Sero 43"</h3><p>$21,999.00 MXN</p></div>
+            <div class="producto"><img src="soundbar_q990c.jpg" alt="Soundbar HW-Q990C"><h3>Soundbar Q990C</h3><p>$18,999.00 MXN</p></div>
+            <div class="producto"><img src="proyector_freestyle.jpg" alt="Proyector The Freestyle"><h3>The Freestyle</h3><p>$12,999.00 MXN</p></div>
+            <div class="producto"><img src="tv_crystal_65.jpg" alt="Crystal UHD 4K 65"><h3>Crystal UHD 65"</h3><p>$13,999.00 MXN</p></div>
+            <div class="producto"><img src="tv_qled_55.jpg" alt="QLED 4K 55 Q60C"><h3>QLED 4K 55"</h3><p>$11,999.00 MXN</p></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Todos Los Derechos Reservados 2026</p>
+        <p>Adame Gallardo Jose Abraham / 0789 / 5-J / Construye aplicaciones Web</p>
+    </footer>
+
+</body>
+</html>
